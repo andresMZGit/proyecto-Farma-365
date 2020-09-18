@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Facturación FARMA365</title>
+    <script src="https://kit.fontawesome.com/34cf304f66.js" crossorigin="anonymous"></script>    
+    <link rel="stylesheet" href="../CSS/styleMisFacturas.css">
+</head>
+<body>
+    <div class="soporte">      
+        <img id="entrar-soporte" class="entrar-soporte" src="../photos/imag/medico.png" alt="soporte-al-usuario.png" width="100px" height="100px">  
+        <div id="contenedor-servicio" class="contenedor-servicio">           
+            <div class="box-service">
+                <div class="box-sv-header">
+                    <h2>Servicio al Usuario</h2>
+                    <i id="cerrarSoporte" class="fas fa-times"></i>
+                </div>
+                <div class="asesor-tecnico">
+                    <div>
+                        <h4>¿Que deseas hacer?</h4>
+                        <p>Realizar Reclamo:</p>
+                    </div>
+                    <form action="">
+                        <input type="text" placeholder="Nombre y Apellido*" name="nombre-service" id="nombre-service" required>
+                        <input type="email" placeholder="Correo Electrónico*" name="correo-service" id="correo-service" required>
+                        <label for="opcion-tecnica">¿Que inconveniente tuviste?</label>
+                        <select name="opcion-tecnica" id="ocpiones-select" required>
+                            <option value="condicion1">No recibi mi pedido despues de las 5 horas del pago</option>
+                            <option value="condicion2">Reportar problemas técnicos de la página</option>
+                            <option value="condicion3">No me agregan productos a la Bolsa</option>
+                            <option value="condicion4">El sistema no agarra mi tarjeta de débito o credito</option>
+                            <option value="condicon5">Otro...</option>
+                        </select>
+                        <input type="text" class="mensaje-sv" placeholder="Describe tu inconveniente*" name="mensaje-service" id="mensaje-service" required>
+                    </form>
+                </div>
+                <div class="cita-mdc">
+                    <button id="enviarSoporte">Enviar Reporte</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <header>
+        <div class="contenedor-facturacion">
+            <a href="home.html"><img src="../photos/logo-farma365.png" alt="logo-farma365"></a>
+            <h3>Consulta de Comprobante</h3>
+        </div>
+        <div class="info">
+            <div class="miga-pan">
+                <a href="home.html">Inicio <span><i class="fas fa-angle-right"></i></span></a>
+                <a href="facturacion.html">F. Electrónica <span><i class="fas fa-angle-right"></i></span></a>
+                <a id="miga-pan-end">Consulta de Comprobantes</a>
+            </div>
+            <h3 style="text-transform: uppercase; margin-right: 15px;">moncayo zambrano andrés alejandro</h3>
+        </div>
+    </header>
+    <main>
+        <section>
+            <div class="contenedor-facturas">
+                <button type="button" onclick="javascript:window.print('.contenedor-facturas')">Imprimir</button>
+                <div class="format-factura">
+                    <div class="encabezado">
+                        <ul>
+                            <li><h4>PAOLA MARÍA VARGAS ZAMBRANO</h4></li>
+                            <li><h5>RUC: 1316175208001</h5></li>
+                            <li><h5>Dirección: La Aurora - Manta, Callejon V-3 y Calle U-3, Esquina</h5></li>
+                            <li><h5>Teléfono: 0984562658</h5></li>
+                            <li><h5>Obligado a Llevar Contabilidad <span>SI</span></h5></li>
+                        </ul>                        
+                        <img src="../photos/logo-oscuro-farma365.png">                        
+                    </div>
+                    <div class="inf-cliente">
+                        <div class="t"><h4>COMPROBANTE ELECTRÓNICO DE VENTA NO.</h4></div>
+                        <div class="t"><h4>002-037-000245325</h4></div>
+                        <div class="area1">
+                            <div class="col-emisor">                                                              
+                                <ul>
+                                    <li><h5>Cliente: </h5></li>
+                                    <li><h5>Identificación: </h5></li>
+                                    <li><h5>E-mail: </h5></li>
+                                    <li><h5>Fecha de Compra: </h5></li>
+                                    <li><h5>Tipo de Venta: </h5></li>
+                                </ul>
+                            </div>
+                            <div class="col-dato">   
+                                <!--002-037-000024035-->
+                                <ul>
+                                    <li><h5 style="text-transform: uppercase;">moncayo zambrano andrés alejandro</h5></li>
+                                    <li><h5>1319999999</h5></li>
+                                    <li><h5>:</h5></li>
+                                    <li><h5>23/07/20    11:13:17</h5></li>
+                                    <li><h5 style="text-transform: uppercase;"><strong>Contado</strong></h5></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="area2">
+                            <div class="col-emisor">                                                              
+                                <ul>
+                                    <li><h5>Teléfono: </h5></li>                               
+                                </ul>
+                            </div>                            
+                            <div class="col-dato">   
+                                <!--002-037-000024035-->
+                                <ul>
+                                    <li><h5>0996512312</h5></li>                                    
+                                </ul>
+                            </div>                            
+                        </div>
+                    </div>
+                    <div class="productos-compra">                        
+                        <table id="table-factura">
+                            <tr>
+                                <th>Código</th>
+                                <th>Descripción</th>
+                                <th>Cantidad</th>
+                                <th>Precio</th>
+                                <th>Desc. %</th>
+                                <th>Desc.</th>
+                                <th>SubTotal</th>
+                            </tr>
+                            
+                            <tr>
+                                <td>22885</td>
+                                <td>Geniol Adultos jajajajaja</td>
+                                <td>2</td>
+                                <td> 2522</td>
+                                <td>666</td>
+                                <td>9966</td>
+                                <td>96655</td>                                
+                            </tr>
+                            <tr>
+                                <td>22885</td>
+                                <td>Geniol Adultos jajajajaja</td>
+                                <td>2</td>
+                                <td> 2522</td>
+                                <td>666</td>
+                                <td>9966</td>
+                                <td>96655</td>                                
+                            </tr>                            
+                        </table>
+                        <hr>
+                    </div>
+                    <div class="pie">
+                        <div class="col-anuncio">
+                            <h5>MUCHAS GRACIAS POR SU COMPRA</h5>
+                            <h6>CONSULTA Y DESCARGA TUS COMPROBANTES EN https://www.farma365.com.ec/facturacion-electronica/</h5>
+                        </div>
+                        <div class="col-subtotal">
+                            <div class="emisor">
+                                <h5>SubTotal:</h5>
+                                <h5>I.V.A 12%:</h5>
+                                <h5>Total:</h5>
+                                <h5>Efectivo:</h5>
+                                <h5>Cambio:</h5>
+                            </div>
+                            <div class="precio-factura">
+                                <h5>$ 12.00</h5>
+                                <h5>$ 12.00</h5>
+                                <h5>$ 12.00</h5>
+                                <h5>$ 12.00</h5>
+                                <h5>$ 12.00</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="contenedor-footer">
+            <div class="marca-volver">
+                <a href="home.html"><img src="../photos/logo-farma365-min.png" alt="logo farma365 volver"></a>
+            </div>
+            <div class="contenedor-columna">
+                
+                <div class="columna">
+                    <h3 class="title">Acerca de Nosotros</h3>
+                    <hr>
+                    <ul>                       
+                        <li><a class="lista" href="qSomos.html">Quiénes Somos</a></li>
+                        <li><a class="lista" href="catalogo.html">Catálogo</a></li>
+                        <li><a class="lista" href="facturacion.html">Factura Electrónica</a></li>
+                    </ul>
+                </div>
+                <div class="columna">
+                    <h3 class="title">Horarios de Atención</h3>
+                    <hr>
+                    <p>Lunes a viernes:
+                        <p>08:00 am - 21:00 pm</p>
+                        <p>Sabados y Domingos - Feriados:
+                        <p>08:30 am - 21:30 pm</p>
+                        </p>
+                    </p>
+                </div>
+                <div class="columna">
+                    
+                    <a class="title enlace-tt" href="contactos.html">Contáctanos</a>
+                    <hr>
+                    <p>Manta: 0984562658</p>
+                    <p>E-mail: farmacias365@gmail.com</p>
+                </div>
+                <div class="columna">
+                    <h3 class="title">Ayúdanos a Mejorar</h3>
+                    <hr>                    
+                    <ul>                       
+                        <li><input class="name" type="text" placeholder="Nombre"></li>
+                        <li><input class="mail" type="text" placeholder="Correo Electronico"></li>
+                        <li><input class="message" type="text" placeholder="Mensaje"></li>
+                        <li><a class="send" href="#">Enviar</a></li>
+                    </ul>
+                </div> 
+                              
+            </div>  
+            <div class="contenedor-credits">
+                <h4 class="credits">Farma 365 2020 - Todos los Derechos Reservados&reg;</h4>
+                <h4 class="credits">Designed by Andrés MZ</h4>
+                
+            </div>           
+        </div>
+    </footer>
+
+    <script src="../JS/soporte.js"></script>
+</body>
+</html>
