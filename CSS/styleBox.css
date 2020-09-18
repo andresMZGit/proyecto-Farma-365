@@ -1,0 +1,77 @@
+/*================================================================
+                    LISTA DE PRODUCTOS
+=================================================================*/
+.fila-productos{
+    display: flex;
+    padding: 20px 20px 0 20px;
+    margin-top: 10px;
+}
+    .fila-productos ul{
+        list-style: none;
+    }
+.fila-productos .box-producto{
+    background-color: #fff;
+    color: #006be4;
+    max-width: 185px;
+    height: 325px;
+    max-height: 325px;
+    padding: 5px 10px 15px 10px;
+    border: 2px solid #016be4;
+    border-radius: 16px;
+    margin: 15px 10px;
+}         
+    .box-producto .images-product{               
+        min-width: 185px;
+        min-height: 185px;      
+        position: relative;
+        z-index: 1;
+    }    
+    .box-producto img{
+        margin: auto;
+        position: absolute;
+        max-height: 165px;
+        max-width: 165px;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+    }
+    .body-bolsa hr{
+        padding: 1.5px;
+        background-color: #016be4;
+        border: none;
+        border-radius: 12px;
+    }
+
+    .body-bolsa .id-product{
+        display: none;
+    }
+    .body-bolsa .descr-product{
+        height: 70px;
+        margin-top: 7px;
+        max-height: 70px;
+    }
+        .descr-product .text-descr{
+            color: #016be4;
+            text-decoration: none;
+            font-size: 18px;
+            text-transform: capitalize;
+        }
+        .body-bolsa h3{
+            margin: -5px 0;
+            font-size: 22px;
+        }
+        .body-bolsa a:not(.text-descr){
+            display: block;
+            text-align: center;
+            border-radius: 17px;
+            padding: 10px;
+            background-color: #016be4;
+            color: #fff;
+            font-size: 16px;
+            text-decoration: none;
+            margin: 10px 0;
+        }
+.body-bolsa .producto-catalogo i{
+    margin-right: 10px;
+}        

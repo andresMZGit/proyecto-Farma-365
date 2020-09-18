@@ -1,0 +1,24 @@
+.miga-pan a{
+    color: #016be4;
+    text-decoration: none;
+    padding: 0 5px;
+    font-size: 15px;
+}
+
+.miga-pan a>span{
+    margin-left: 5px;
+    color: #000;
+    font-size: 12px;
+}
+
+.miga-pan #miga-pan-end{
+    color:#757575;
+}
+
+.header-main .miga-pan{
+    padding: 10px 50px;
+}
+
+.miga-pan{
+    padding: 10px 40px;
+}

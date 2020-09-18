@@ -1,0 +1,175 @@
+.over-contra{
+    background: rgba(0, 0, 0, .5);
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    z-index: 3;
+    visibility: hidden;
+}
+
+.over-contra.active{
+    visibility: visible;
+}
+
+.container-contra{
+    background: #fff;
+    padding: 25px;
+    width: 325px;
+    color: #004798;
+    text-align: center;
+
+    transition: .5s ease all;
+    opacity: 0;
+    transform: scale(0);
+}
+
+.container-contra .encabezado{
+    display: flex;
+    flex-wrap: nowrap;
+    margin-bottom: 15px;
+}
+
+.encabezado .go-login{
+    font-size: 25px;
+    color: #656565;
+    cursor: pointer;
+    flex: 1 1 auto;
+}
+
+.encabezado h4{
+    font-size: 16px;
+    margin-top: 3px;
+    flex: 15 1 auto;
+}
+
+.encabezado .close-contra{
+    font-size: 25px;
+    color: #656565;
+    cursor: pointer;
+    flex: 1 1 auto;
+}
+
+.container-contra .input-contra p{
+    font-size: 13px;
+    margin: 10px 20px;
+    text-align: center;
+}
+
+.input-contra .btn-recuperar{
+    background: #016be4;
+    color: #fff;
+    width: 80%;
+    padding: 7px 15px;
+    border: 2px solid #016be4;
+    border-radius: 7px;
+    margin-bottom: 15px;
+}
+
+.input-contra .btn-recuperar:hover{
+    background: #004798;
+}
+
+.container-contra .input-contra .ingreso{
+    width: 70%;
+    line-height: 16px;
+    padding: 7px 15px;
+    border: 2px solid #016be4;
+    border-radius: 7px;
+    margin: 15px 25px;
+}
+
+.input-contra ::-webkit-input-placeholder { color: #016be4; }
+
+/**********TRANSICION**********/
+.container-contra.active{
+    opacity: 1;
+    transform: scale(1);
+}
+
+
+
+/*------------------------------------------SEGUNDO PASO------------------------------------------*/
+.over-c2{
+    background: rgba(0, 0, 0, .3);
+    color: #004798;
+    display: flex;
+    position: fixed;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    bottom: 0;
+    left:0;
+    right: 0;
+    z-index: 3;
+    visibility: hidden;
+}
+.over-c2.active{
+    visibility: visible;
+}
+
+.container-c2{
+    width: 325px;
+    background-color: #fff;
+    padding: 25px;
+    text-align: center;
+
+    transition: .7s ease all;
+    opacity: 0;
+    transform: scale(0);
+}
+
+.banner-c2{
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.banner-c2 .btn-atras{
+    flex: 1 1 auto;
+    color: #656566;
+    font-size: 20px;
+    cursor: pointer;
+}
+.banner-c2 .btn-atras:hover{
+    color: #004798;
+}
+
+.banner-c2 h4{
+    flex: 20 1 auto;
+}
+.banner-c2 .btn-cancelar{
+    flex: 1 1 auto;
+    color: #656566;
+    font-size: 20px;
+    cursor: pointer;
+}
+.banner-c2 .btn-cancelar:hover{
+    color: #004798;
+}
+
+.inf-c2 img{
+    margin: 30px 0;
+}
+
+.inf-c2 .send{
+    padding: 9px;
+    width: 200px;
+    background-color: #016be4;
+    color: #fff;
+    border-radius: 7px;
+    border: none;
+    margin: 20px 0;
+}
+
+.inf-c2 .send:hover{
+    background-color: #004798;
+}
+
+.container-c2.active{
+    opacity: 1;
+    transform: scale(1);
+}

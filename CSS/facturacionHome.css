@@ -1,0 +1,82 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: Bahnschrift;
+}
+
+body{
+    margin: 0;
+}
+
+header{
+    height: 130px;
+    background-color: #016be4;
+    color: #fff;  
+}
+
+.contenedor-facturacion{
+    display: flex;
+    justify-content: space-between;
+}
+
+header .contenedor-facturacion img{
+    width: 300px;
+    height: 100px;
+    position: absolute;
+    margin: 20px 45px;
+}
+
+header .contenedor-facturacion h3{
+    margin: 0 45px;
+    margin-top: 70px;
+    font-size: 35px;
+}
+
+/*===============MAIN===============*/
+.contain-form{
+    position: relative;
+}
+
+.form-factura{
+    max-width: 315px;
+    padding: 35px 25px;
+    background-color: #016be4;
+    border: none;
+    border-radius: 20px;
+    color: #fff;
+}
+
+.contain-form .form-factura{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(20%) translateY(-62%);
+}
+
+.contain-form .form-factura .integer{
+    width: 285px;
+    padding: 5px 15px;
+    border: none;
+    border-radius: 12px;
+    line-height: 16px;
+    font-size: 18px;
+    color: #016be4;
+    margin-bottom: 7px;
+    display: block;
+    justify-content: center;
+}
+
+.contain-form .form-factura p{
+    font-size: 12.5px;
+    margin: 10px 0;
+}
+
+.form-factura form #ingresar-fact{
+    border: none;
+    font-size: 16px;
+    right: 100px;
+    color: #016be4;
+    border-radius: 7px;
+    padding: 8px 20px;
+    margin-left: 110px;
+}

@@ -1,0 +1,106 @@
+@import url(login.css);
+@import url(contraseña.css);
+@import url(buscador.css);
+@import url(subsistemas.css);
+@import url(register.css);
+@import url(bolsa-shop.css);
+@import url(soporte.css);
+@import url(headerLog.css);
+
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: Bahnschrift;
+}
+
+body{
+    margin: 0;
+}
+
+
+/*-----------------------
+        HEADER
+------------------------*/
+header{
+    background: #016BE4;
+    width: 100%;
+    height: 110px;
+    position: fixed;
+    z-index: 2;
+    top: 0;
+}
+
+
+.contenedor-princ{
+    display: flex;
+    flex-flow: row nowrap;
+    border-bottom: 10px solid #fff;
+}
+.contenedor-princ .logo{
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    flex: 1 1 auto;
+    width: 280px;
+    height: 35px;
+}
+.logo img{
+    width: 200px;
+    height: 35px;
+    margin-left: 30px;
+}
+
+
+/*DIRECCIONES*/
+.boton{ 
+    margin: 15px 30px 15px 30px;      
+    color: #fff;
+    display: inline-block;
+    font-size: 16px;
+    padding: 6px 10px;
+    text-align: center;
+    width: 180px;
+    flex: 2 1 auto;
+    text-decoration: none;
+}
+
+/*------LOGIN------*/
+.inicios{   
+    margin: 18px 5px 0 5px;
+    background: #016BE4;
+    color: #fff;
+    display: inline-block;
+    font-size: 16px;
+    padding: 1px 5px;
+    text-align: center;
+    width: 120px;
+    flex: 2 1 auto;
+    text-decoration: none; 
+    border: 2px solid #fff;   
+    border-radius: 20px;
+}
+
+.register{ 
+    margin-right: 20px;  
+    background: #fff;
+    color: #016BE4;
+    display: inline-block;
+    font-size: 16px;
+    padding: 3px 5px;
+    text-align: center;
+    width: 120px;
+    flex: 3 1 auto;
+    text-decoration: none;    
+    border-radius: 20px;
+}
+
+/*----------------*/
+
+/*SOPORTE AL USUARIO*/
+.soporte{
+    position: fixed;
+    top: 80%;
+    left: 30px;
+    bottom: 10%;
+    cursor: pointer;
+}

@@ -1,0 +1,194 @@
+@import url(migaPan-Apart.css);
+@import url(styleBox.css);
+@import url(styleFooter.css);
+@import url(bolsa-shop.css);
+@import url(styleHeader.css);
+@import url(filtros.css);
+
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: Bahnschrift;
+}
+
+body{
+    margin: 0;    
+} 
+
+
+
+.body-header{
+    display: block;
+    width: 100%;
+    margin-top: 115px;
+}
+.body-main{
+    display: flex;
+    min-height: 700px;
+    padding-bottom: 50px;
+}  
+    .header-main{
+        width: 100%;
+    }
+    .navegacion{
+        width: 35%;
+    }
+
+    .navegacion nav,.navegacion aside{
+        margin-left: 50px;
+    }
+
+.footer-main{
+    background-color: #E6E6E6;
+    width: 100%;
+    margin-bottom: 30px;
+    display: flex;
+    flex-direction: row-reverse;
+}
+    .footer-main .cont-paginas{
+        display: flex;
+        color: #016be4;
+        font-weight: bold;
+        padding: 15px 50px;
+    }
+
+.header-main .subtitulo{
+    color: #016be4;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 50px;
+    background-color: #E6E6E6;
+}
+    .header-main .subtitulo .cont-paginas{
+        display: flex;
+    }
+    .cont-paginas h3{
+        font-size: 20px;
+    }
+    .cont-paginas ul li{
+        display: inline-block;        
+    }
+.cont-paginas h3{
+    margin-right: 10px;
+}
+    .cont-paginas a{
+        padding: 5px 10px;
+        border: 1px solid #016be4;
+        cursor: pointer;
+        margin-right: 5px;
+        font-weight: bold;
+        font-size: 17px;
+        text-decoration: none;
+        color: #016be4;
+    }
+    .cont-paginas a:not(#page-actual):hover{
+        background-color: #016be4;
+        color: #E6E6E6;
+    }
+    .cont-paginas #page-actual{
+        cursor: text;
+        background-color: cyan;
+        border: none;
+    }
+    .cont-paginas #three-point{
+        cursor: text;
+        border: none;
+        padding: 5px 2px;;
+    }
+    .cont-paginas #next-page, #previous-page{
+        background-color: #016be4;
+        color: #E6E6E6;
+    }
+    
+    
+
+
+
+/*NAVEGACION-PRODUCTOS*/
+nav{
+    background-color: #E6E6E6;
+    max-height: 350px;
+}
+ul{
+    list-style: none;
+}
+
+nav .contenedor-elementos{
+    padding: 15px 20px;
+    font-size: 17px;
+    color: #016be4;
+}
+    .contenedor-elementos a{
+        color: #016be4;
+        text-decoration: none;
+        font-size: 17px;
+        padding-left: 5px;
+    }
+
+.contenedor-elementos li{
+    margin-top: 5px;
+}
+
+
+/*FILTROS DE PRODUCTOS*/
+aside{
+    height: 200px;
+    margin-top: 50px;
+}
+
+.opciones h1{
+    color: #016be4;
+    font-size: 22px;
+    margin-top: 10px;
+}
+
+.opciones ul{
+    background-color: #E6E6E6;
+    padding: 10px 20px;
+}
+.opciones ul li{
+    padding: 5px 0;
+}
+.opciones ul li>a{
+    color: #016be4;
+    padding: 0 10px;
+    font-size: 18px;
+    text-decoration: none;
+}
+.opciones ul li>a:hover{
+    color: #004798;
+    font-weight: bolder;
+}
+
+
+
+/*SECCION PRODUCTOS*/
+.todos-productos{
+    width: 100%;
+    padding: 20px 50px;
+}
+
+#all-prod{
+    text-decoration: none;
+    background-color: #fff;
+    color: #016be4;
+    padding: 5px 10px;
+    border: 2px solid #016be4;
+    display: block;
+    text-align: center;
+    border-radius: 15px;
+}
+    #all-prod:hover{
+        background-color: #004798;
+        color: #E6E6E6;
+    }
+    #all-prod.active{
+        background-color: #004798;
+        font-weight: bold;
+        color: #E6E6E6;
+    }
+
+
+
+

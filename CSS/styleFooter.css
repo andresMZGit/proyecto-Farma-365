@@ -1,0 +1,107 @@
+
+/*=====================
+        FOOTER
+=======================*/
+footer .contenedor-footer{
+    background: #016be4;
+    width: 100%;   
+    padding: 0 0 15px 0; 
+}
+
+.contenedor-footer .marca-volver{
+    padding: 20px 10px;
+    text-align: center;
+}
+    .marca-volver a>img{
+        width: 400px;
+        height: 70px;
+    }
+
+
+.contenedor-footer ul{
+    list-style: none;
+}
+
+.contenedor-footer ul a{
+    color: #fff;
+    text-decoration: none;
+    margin: 5px 15px;
+    font-size: 13.5px;
+    display: block;
+}
+
+.contenedor-columna p{
+    color: #fff;
+    margin: 5px 15px;
+    font-size: 13.5px;
+}
+.contenedor-footer .columna{
+    margin: 0px 15px 20px 15px;
+    border: none;
+    padding: 0 20px;
+    width: 100%;
+    max-width: 250px;
+}
+
+
+.contenedor-columna{
+    margin: 0 auto;
+    justify-content: center;
+    display: flex;
+}
+
+.columna .title{ 
+    text-align: center;
+    color: #fff; 
+    font-size: 14px; 
+    text-decoration: none;
+}
+    .columna .enlace-tt{
+        margin-left: 80px;
+    }
+
+
+.contenedor-columna hr{
+    background: #fff;
+    padding: 1px;
+    border: none;
+    margin-bottom: 15px;
+}
+
+.columna ul input{
+    border: 1px solid #fff;
+    background: transparent;
+    margin: 0px 0px 10px 15px;
+    padding: 3px 20px;
+    color: #fff;
+}
+
+.columna ::-webkit-input-placeholder { color: #fff; } /*poner el text de un formulario en un color agregado*/
+
+.columna ul li .message{
+    padding: 3px 20px 30px 20px;
+}
+
+.columna ul li .send{
+    padding: 5px 15px;
+    background: #fff;
+    color: #016BE4;
+    text-align: center;
+    max-width: 50px;
+}
+
+
+.contenedor-credits{
+    background: #083F7E;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+    padding: 10px 0;
+}
+
+.credits{
+    color: #60A3F1;
+    margin: 0 150px;
+}

@@ -1,0 +1,207 @@
+@import url(styleHeader.css);
+@import url(styleFooter.css);
+@import url(migaPan-Apart.css);
+@import url(addTarjeta.css);
+
+body{
+    font-family: Bahnschrift;
+    margin: 0;
+}
+p{
+    margin: 0;
+}
+main{
+    margin-top: 110px;
+}
+main .contenido{
+    padding-bottom: 50px;
+}
+main .contenido h2{    
+    color: #fff;
+    background-color: #016be4;
+    padding: 8px 50px;
+}
+.contenido form{
+    padding: 0 80px;    
+}
+
+.d-cl-act{
+    display: flex;
+    margin: 15px 0;
+}
+.d-cl-act .data-cl{
+    margin-right: 25px;
+}
+
+.contenido form .nombre-cliente, .correo-cliente, .cedula-cliente, .numero-cliente{
+    display: flex;
+    align-items: center;
+    padding: 5px;
+}
+.contenido form label{
+    display: block;
+    width: 180px;
+}
+
+.contenido form input{
+    border: 1px solid #016be4;
+    padding: 7px 15px;
+    width: 300px;
+    color: #016be4;
+}
+
+.contenido form .productos-agregados table{
+    min-width: 800px;
+    text-align: center;
+    line-height: 30px;
+    align-items: center;
+    border-collapse: collapse; 
+      
+}
+    .productos-agregados table thead tr th{
+        border-top: 5px solid #016be4;
+        border-bottom: 5px solid #016be4;
+    }
+    .productos-agregados table .precios{
+        text-align: end;        
+        display: block;
+        width: 100px;
+    }
+    .productos-agregados table p{
+        margin: 0;
+        text-align: end;
+    }
+    .productos-agregados .titulo-product{
+        text-transform: capitalize;
+    }
+    .productos-agregados table tbody .cantidad{
+        background-color: #016be4;
+        color: #fff;
+        text-align: center;
+        border-radius: 7px;
+    }
+    .productos-agregados tbody tr td img{
+        max-width: 50px;
+        max-height: 50px;
+    }
+    .opciones{
+        padding: 5px;
+        justify-content: center;
+    }
+        .volver a{
+            display: block;
+            text-align: center;
+            padding: 7px 10px;
+            background-color: #004798;
+            color: #fff;
+            text-decoration: none;
+            font-size: 20px;
+            border-bottom-left-radius: 16px;
+            border-bottom-right-radius: 16px;
+        }
+
+.productos-agregados table .eliminar-btn{
+    color: #016be4;
+    text-decoration: none;
+    border: 1px solid #016be4;
+    padding: 3px 5px;
+    border-radius: 5px;
+}
+
+.cl4-j{
+    display: flex;
+    padding: 20px 0;
+}
+    .cl4-j .productos-agregados table tbody tr:hover{
+        background-color:rgba(0, 0, 0, 0.2);
+    }
+    .cl4-j .valorPagar{       
+        margin-left: 20px;
+        width: 350px;
+        max-height: 438px;
+        border: 2px solid #016be4;
+        border-radius: 20px;
+    }
+    .cl4-j .valorPagar .headerPago{
+        background-color: #016be4;
+        display: block;
+        padding: 10px 15px;
+        border-top-right-radius: 13px;
+        border-top-left-radius: 13px;
+    }
+    .cl4-j .valorPagar .headerPago h2{
+        margin: 0;
+        padding: 0;
+        font-size: 20px;
+    }
+    .headerPago i{
+        margin-right: 10px;
+    }
+    .cl4-j .valorPagar .sub-iva-total{
+        display: flex;
+        justify-content: space-between;
+        color: #004798;
+        padding: 5px 15px;
+        font-size: 20px;
+        margin: 5px 0 10px 0;
+        
+    }
+        .valorPagar .sub-iva-total p{
+            margin: 0;
+        }
+        .sub-iva-total .valor{
+            font-weight: bold;
+        }
+
+.cl-contain .guia-pago{
+    font-size: 13px;
+    display: block;
+    text-align: end;
+    padding: 5px 15px;
+}
+.cl-contain .m-pago-control{
+    padding: 10px 15px;
+}
+    .m-pago-control .cl-ct-a a{
+        color: #016be4;
+        text-decoration: none;
+        padding: 5px 10px;
+        text-align: center;
+        display: block;
+        margin-bottom: 5px;
+        border-radius: 12px;
+        border: 2px solid #004798;
+    }
+        .cl-ct-a a>i{
+            margin-right: 15px;
+        }
+    .m-pago-control .cl-ct-a a:hover{
+        background-color: #004798;        
+        color: #fff;
+    }
+    .m-pago-control .cl-ct-a a.active{
+        background-color: #004798;        
+        color: #fff;
+    }
+/*========CARGANDO============*/
+.gif-carga{
+    position: fixed;
+    top: 0%;
+    bottom: 0;
+    right: 0;
+    left: 0; 
+    background-color: rgba(255, 255, 255, 0.5); 
+    align-items: center;  
+    justify-content: center;
+    z-index: 4;
+    display: flex;
+    visibility: hidden;
+}
+    .gif-carga.active{
+        visibility: visible;
+    }
+.gif-carga img{
+    filter: saturate(500%);
+    max-width: 100px;
+    max-height: 100px;
+}

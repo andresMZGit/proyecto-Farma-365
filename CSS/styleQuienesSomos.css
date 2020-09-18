@@ -1,0 +1,95 @@
+@import url(styleHeader.css);
+@import url(styleFooter.css);
+
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: Bahnschrift;
+}
+
+body{
+    margin: 0;
+}
+main{
+    margin-bottom: 40px;
+    margin-top: 115px;
+}
+
+.encabezado-qs{
+    width: 100%;
+}
+
+.container-cabeza .miga-pan{
+    padding: 10px 60px;
+}
+
+.container-cabeza .miga-pan a{
+    color: #016be4;
+    text-decoration: none;
+    padding: 0 5px;
+    font-size: 15px;
+}
+
+.container-cabeza .miga-pan a>span{
+    margin-left: 5px;
+    color: #000;
+    font-size: 12px;
+}
+
+.container-cabeza .miga-pan #miga-pan-end{
+    color: grey
+}
+
+.container-cabeza .title{
+    font-size: 20px;
+    width: 100%;
+    color: #fff;
+    background-color: #016be4;
+    text-align: center;
+    padding: 10px 0;
+}
+
+/*HISTORY*/
+.contenido{
+    padding: 20px 100px;
+}
+
+.container-contenido{
+    display: flex;
+    font-size: 20px;
+    flex-flow: wrap;
+}
+
+.container-contenido img{
+    display: block;
+    margin: auto;
+    padding: 10px;
+}
+.container-contenido .history{
+    display: block;
+    max-width: 100%;  
+    color: #767878;  
+}
+.container-contenido .history ul{
+    padding: 10px 50px;
+}
+
+/*MISION*/
+.mision{
+    width: 50%;
+    padding: 20px 0;
+    color: #767878;
+}
+
+.mision h2{
+    color: #016be4;
+}
+/*VISION*/
+.vision{
+    width: 50%;
+    color: #767878;
+    padding: 20px 0;
+}
+.vision h2{
+    color: #016be4;
+}

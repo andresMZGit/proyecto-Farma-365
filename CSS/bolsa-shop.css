@@ -1,0 +1,117 @@
+*{
+    font-family: Bahnschrift;
+    margin: 0;
+}
+
+.look-bolsa2{
+    padding: 3px 7px;
+    border: 2px solid #fff;
+    border-radius: 10px;
+    margin-right: 15px;
+}
+    .look-bolsa2 i{
+        padding-right: 5px;
+    }
+
+.boton-bolsa .container-bolsa{
+    position: fixed;
+    top: 1;
+    bottom: 0;
+    width: 500px;
+    height: 500px;
+    right: 0;       
+    background-color: #fff;
+    border: 2px solid #016be4;
+    z-index: 2;
+    display: none;     
+}
+    .container-bolsa.active{
+        display: block;
+    }
+
+
+.boton-bolsa .container-bolsa .bolsa-header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px 20px;
+    background-color: #016be4;
+    color: #fff;
+    font-size: 14px;
+}
+    .container-bolsa .bolsa-header a i{
+        text-decoration: none;
+        color: #fff;
+        font-size: 25px;
+    }
+.boton-bolsa .container-bolsa .table{
+    width: 100%;
+    height: 100%;
+    position: relative;
+}    
+    .table .enlaces-bolsa{
+        display: flex;
+        width: 100%;
+        flex-flow: wrap;
+        position: absolute;
+        bottom: 60px;
+    }
+        .table .enlaces-bolsa .totales{
+            display: flex;
+            width: 100%;
+            color: #fff;
+            justify-content: space-between;
+            background-color: #016be4;
+            padding: 10px 15px;
+        }
+    .container-bolsa .table .enlaces-bolsa #vaciar-bolsa, #pagar-productos{
+        color: #016be4;
+        text-decoration: none;
+        font-size: 18px;
+        padding: 10px 20px;
+        background-color: #fff;
+        border: 1px solid #016be4;
+        font-weight: bold;
+        display: block;
+        width: 41.6%;
+        text-align: center;
+    }
+        .container-bolsa .table .enlaces-bolsa #vaciar-bolsa:hover, #pagar-productos:hover{
+            color: #fff;
+            background-color: #016be4;            
+        }
+.container-bolsa .table .table-bolsa{
+    text-align: center;
+    width: 425px;  
+    border-collapse: collapse;  
+    margin: 10px 0 0 10px;
+}
+    .container-bolsa .table .look-table{
+        display: block;
+        overflow-y: auto;
+        height: 325px;
+        margin: 15px;
+        border-radius: 15px;
+        border: 1px solid #016be4;
+    }
+    .table-bolsa tr td{
+        line-height: 30px;
+    }
+    .table tbody tr{
+        border-bottom: 1px solid #016be4;
+    }
+
+    .table-bolsa .titulo-product{
+        text-transform: capitalize;
+    }
+    .table-bolsa .eliminar-btn{
+        border: 1px solid #016be4;
+        border-radius: 10px;
+        background-color: #fff;
+        color: #016be4;
+        text-decoration: none;
+        padding: 5px;
+    }
+    
+
+

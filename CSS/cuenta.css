@@ -1,0 +1,284 @@
+@import url(migaPan-Apart.css);
+@import url(styleHeader.css);
+@import url(styleFooter.css);
+@import url(soporte.css);
+
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: Bahnschrift;
+}
+
+body{
+    margin: 0;
+}
+
+main{
+    margin-top: 115px;
+    overflow: hidden;
+    min-height: 700px;
+}
+ul{
+    list-style: none;
+}
+main .contenedor-cuenta{
+    display: flex;
+    width: 100%;
+}
+.header-main .subtitulo{
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 50px;
+    background-color: #016be4;
+}
+
+main nav{
+    width: 30%;
+    font-size: 18px;
+    padding: 40px 0;
+    border-right: 1px solid rgba(55, 55, 55, 0.3);
+}
+nav ul{
+    padding-right: 20px;
+}
+    nav ul li a:not(.active){
+        text-decoration: none;
+        color: #016be4;
+        display: block;
+        padding: 5px 20px 5px 40px;
+        margin-left: -15px;
+    }
+        nav a:hover:not(.active){
+            background-color: #016be4;
+            color: #fff;
+            border-radius: 16px;
+        }
+        nav ul li .active{
+            text-decoration: none;
+            color: #016be4;
+            display: block;
+            padding: 5px 20px 5px 40px;
+            margin-left: -15px;
+            border: 2px solid #016be4;
+            border-radius: 15px;
+        }
+    nav ul li a>i{
+        margin-right: 15px;
+    }
+
+/*===============================INFORMACION PERSONAL===============================*/
+.cuerpo-main{  
+    width: 100%;
+    padding: 30px 30px;
+}
+.contenedor-informacion{
+    display: none;
+}
+    .contenedor-informacion.active{
+        display: block;
+    }
+    #tema-cuenta{
+        color: #016be4;
+        text-align: start;
+        width: 100%;
+        font-size: 30px;
+    }
+    .contenedor-informacion h1{
+        color: #016be4;
+        text-align: center;
+        width: 100%;
+        font-size: 30px;
+        padding: 15px 0;
+    }
+    .cuerpo-main .container{
+        width: 700px;
+        margin-top: 30px;
+        border: 1px solid rgba(55, 55, 55, 0.3);
+        padding: 20px 40px;
+        margin-bottom: 20px;
+        color: #252525;
+    }
+    .cuerpo-main .contenedor{
+        justify-content: space-between;
+        margin: 0 auto;
+        display: flex;
+        padding: 10px 30px;        
+        border: 1px solid #016be4;
+        margin-bottom: 20px;
+    }   
+        .cuerpo-main .contenedor i{
+            padding: 0 10px;
+            cursor: pointer;
+        }
+
+/*===============================DIRECCIONES===============================*/
+.contenedor-direcciones{
+    display: none;
+}
+.contenedor-direcciones.active{
+    height: 100%;
+    display: block;
+}
+.contenedor-direcciones .contenedor-interior{
+    margin: 20px 0;
+    display: flex;    
+    position: relative;
+    justify-content: space-between;
+}
+.contenedor-direcciones .direccion{
+    margin: 15px 0;
+    display: flex;
+    width: 700px;
+    padding: 20px 40px;
+    border: 1px solid rgba(55, 55, 55, 0.3);
+}   
+    .direccion .text{
+        color: #252525;
+        width: 200px;
+    }
+    
+    .direccion .datos-d{
+        width: 400px;
+        color: #252525;
+    }
+        
+    .direccion .botones{
+        width: 100px;        
+    }
+    .direccion .botones a{
+        display: block;
+        color: #fff;
+        background-color: #016be4;
+        padding: 5px 10px;
+        text-decoration: none;
+        margin-bottom: 10px;
+        text-align: center;        
+    }
+ .boton-nuevo{
+    position: absolute;
+    top: 60px;
+    right: 20px;
+}   
+.boton-nuevo a{    
+    z-index: 1;
+    bottom: 10px;
+    padding: 7px 15px;        
+    background-color: #016be4;
+    color: #fff;
+    font-size: 16px;
+    border-radius: 15px;
+    text-decoration: none;
+}
+
+/*====================================ALERTAS====================================*/
+.contenedor-alertas{
+    display: none;
+}
+    .contenedor-alertas.active{
+        display: block;
+    }
+.contenedor-alertas .contenedor-a{
+    margin: 20px 0;
+    border: 1px solid rgba(55, 55, 55, 0.3);
+    display: flex;    
+    justify-content: space-between;
+}
+.contenedor-alertas .alertas{
+    color: #252525;
+    padding: 10px 20px;
+    width: 700px;
+}
+    .alertas table:not(.table-search){
+        width: 700px;
+        text-align: center;
+        justify-content: space-between; 
+        border-collapse: collapse;       
+    }
+    .alertas table th,td{
+        border-bottom: 1px solid #252525;
+        height: 30px;
+    }
+.boton-vaciar a{
+    color: #fff;
+    background-color: #016be4;
+    padding: 7px 15px;
+    border-radius: 15px;
+    text-decoration: none;
+}
+
+/*=======================METODOS DE PAGO=======================*/
+.contenedor-pago{
+    display: none;
+}
+    .contenedor-pago.active{
+        display: block;
+    }
+.contenedor-pago .contenedor-p{
+    padding: 20px 40px;
+}
+
+.contenedor-p .tarjeta{
+    padding: 20px;
+    border: 1px solid rgba(55, 55, 55, 0.3);
+    width: 700px;
+    margin-bottom: 20px;
+}
+    .tarjeta .descripcion{
+        font-size: 14px;
+        text-align: end;
+        margin: 10px 0;
+        color: #016be4;
+    }
+    .tarjeta .flexbox a{
+        color: #016be4;
+        text-decoration: none;
+    }
+    .flexbox a>i{
+        margin-right: 10px;
+    }
+    .tarjeta .lista-tarjeta{
+        border: 1px solid rgba(55, 55, 55, 0.3);
+        width: 600px;
+        margin: 10px 0 10px 100px;
+    } 
+    .tarjeta .lista-tarjeta .flexbox{
+        display: flex;
+        justify-content: space-between;
+        color: #252525;
+        padding: 15px 40px;
+    }  
+    .lista-tarjeta button{
+        padding: 10px 0;
+        background-color: #016be4;
+        color: #fff;    
+        width: 100%;
+        border: none;
+        cursor: pointer;
+    } 
+/*===========================HISTORIAL===========================*/
+.contenedor-historial{
+    display: none;
+}
+    .contenedor-historial.active{
+        display: block;
+    }
+
+.contenedor-historial .contenedor-h{
+    padding: 20px 40px;
+    border: 1px solid #016be4;
+    width: 800px;  
+}
+
+.contenedor-historial .list-pedidos-total table:not(.table-search){
+    color: #252525;
+    padding: 10px 20px;
+    min-width: 800px;
+    text-align: center;    
+    border-collapse: collapse;
+}
+    .list-pedidos-total table th,td{      
+        border: 1px solid #252525; 
+        height: 30px;       
+    }

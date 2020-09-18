@@ -1,0 +1,38 @@
+#normal-prod-medicamentos{
+    display: none;
+}
+#normal-prod-medicamentos.active{
+    display: block;
+}
+
+
+/*filtro de Nombres de la A a la Z - usando JavaScript y CSS*/
+#medi-a-z{
+    display: none;
+}
+#medi-a-z.active{
+    display: block;
+}
+
+/*========CARGANDO============*/
+.gif-carga{
+    position: fixed;
+    top: 0%;
+    bottom: 0;
+    right: 0;
+    left: 0; 
+    background-color: rgba(255, 255, 255, 0.5); 
+    align-items: center;  
+    justify-content: center;
+    z-index: 4;
+    display: flex;
+    visibility: hidden;
+}
+    .gif-carga.active{
+        visibility: visible;
+    }
+.gif-carga>img{
+    filter: saturate(500%);
+    max-width: 100px;
+    max-height: 100px;
+}

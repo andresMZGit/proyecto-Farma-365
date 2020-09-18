@@ -1,0 +1,63 @@
+@import url(formato-factura.css);
+@import url(styleFooter.css);
+@import url(soporte.css);
+
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: Bahnschrift;
+}
+
+body{
+    margin: 0;
+}
+
+header{
+    color: #fff; 
+}
+
+.contenedor-facturacion{
+    background-color: #016be4;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 20px solid #fff;
+}
+
+header .contenedor-facturacion img{
+    width: 250px;
+    height: 90px;
+    position: absolute;
+    margin: -5px 10px;
+}
+
+header .contenedor-facturacion h3{
+    margin: 20px 45px;
+    font-size: 25px;
+}
+
+.info{
+    padding: 10px;
+    background-color: #016be4;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.info .miga-pan a{
+    color: cyan;
+    text-decoration: none;
+    padding: 0 5px;
+    font-size: 15px;
+}
+
+.info .miga-pan a>span{
+    margin-left: 5px;
+    color: #fff;
+    font-size: 12px;
+}
+
+.info .miga-pan #miga-pan-end{
+    color: #fff;
+}
+
+/*=====================MAIN=====================*/

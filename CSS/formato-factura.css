@@ -1,0 +1,87 @@
+
+main{
+    padding: 40px 0;
+}
+
+.format-factura{    
+    margin: auto;
+    padding: 30px 40px;
+    background-color: #fff;
+    color: #000;
+    max-width: 1000px;
+    border: 2px solid #016be4;
+}
+
+ul{
+    list-style: none;
+}
+
+.format-factura .encabezado{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.format-factura .encabezado img{
+    width: 250px;
+    height: 45px;
+    padding: 20px;
+}
+
+/*==========================DATOS DEL CLIENTE==============================*/
+.inf-cliente{
+    display: flex;
+    flex-flow: wrap;
+}
+
+.inf-cliente .t{
+    width: 50%;
+}
+
+.inf-cliente .area1{ 
+    width: 50%;
+    display: flex;
+}
+.inf-cliente .area2{ 
+    width: 50%;
+    display: flex;
+}
+.inf-cliente .area2 #clave-acceso{
+    margin-top: 35px;
+}
+
+.inf-cliente .col-dato{
+    margin-left: 80px;
+}
+
+/*================================PRODUCTOS DE FACTURA===============================*/
+.productos-compra{
+    padding: 15px 10px 5px 10px;
+}
+table{
+    border-collapse: collapse;
+    width: 100%;
+    text-align: center;
+}
+th{
+    border-top: 3.5px solid #016be4;
+    border-bottom: 3.5px solid #016be4;
+}
+
+.productos-compra hr{
+    border: 1.5px solid #016be4;
+}
+
+/*---------------------------------------SUBTOTAL---------------------------------------*/
+.format-factura .pie{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 0 10px 0;
+}
+
+.col-subtotal{
+    display: flex;
+    column-gap: 150px;
+    margin-right: 50px;
+}

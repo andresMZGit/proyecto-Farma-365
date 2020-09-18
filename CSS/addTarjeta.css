@@ -1,0 +1,105 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: Bahnschrift;
+}
+
+body{
+    margin: 0;
+}
+.overlay-tarjeta{
+    background: rgba(0, 0, 0, 0.5);
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 7;
+    visibility: hidden;
+}
+    .overlay-tarjeta.active{
+        visibility: visible;
+    }
+.contenedor-add-tarjet{
+    background-color: #fff;
+    border: 2px solid #016be4;
+    border-radius: 18px;
+    padding: 20px;
+    width: 550px;
+}
+.contenedor-add-tarjet .add-header-tarjet{
+    display: flex;
+    color: #016be4;
+    justify-content: space-between;
+    font-size: 20px;
+}
+    .add-header-tarjet .btn-close-tar{
+        font-size: 30px;
+        padding: 0 15px;
+        color: #016be4;
+    }
+.contenedor-add-tarjet .contenedor-form{
+    display: flex;  
+    padding: 20px 0;
+}
+    .contenedor-form .form-data label{
+        color: #016be4;
+        font-size: 16px;
+        display: block;
+        width: 80px;
+    }
+    .contenedor-form .form-data #n-tarjeta{
+        padding: 5px 15px;
+        margin-bottom: 10px;
+        display: block;
+        color: #016be4;
+        width: 300px;
+        border: 2px solid #016be4;
+        border-radius: 5px;
+    }
+    .expirar,.año-expira, .ccv{
+        display: flex;
+        align-items: center;
+    }
+    #expiracion, #añoExpira{
+        padding: 5px 15px;
+        margin-bottom: 10px;
+        color: #016be4;
+        width: 50px;
+        border: 2px solid #016be4;
+        border-radius: 5px;
+
+    }
+    .form-data .fila-tarjet{
+        justify-content: space-between;
+    }
+        .form-data .fila-tarjet select{
+            padding: 5px 10px;
+            border: 2px solid #016be4;
+            border-radius: 5px;
+        }
+        .form-data .fila-tarjet .ccv>input{
+            padding: 5px 15px;
+            width: 50px;
+            border: 2px solid #016be4;
+            border-radius: 5px;
+        }
+.contenedor-form .images-tarjet>img{
+    max-width: 200px;
+    padding-left: 20px;
+}
+.contenedor-form .aceptar{
+    padding-top: 35px;
+    text-align: center;
+}
+.contenedor-form #enviar-tarjet{
+    padding: 10px 25px;
+    background-color: #016be4;
+    color: #fff;    
+    text-align: center;
+    border-radius: 10px;
+    text-decoration: none;
+}

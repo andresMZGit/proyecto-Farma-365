@@ -1,0 +1,58 @@
+
+/*-----NOTIFICACIONES------*/
+.notificaciones i{
+    margin: 15px 20px 15px 0;      
+    color: #fff;
+    display: inline-block;
+    font-size: 30px;
+    text-align: center;
+    flex: 0 0 auto;
+    text-decoration: none;
+}
+
+/*CUENTA*/
+.cuenta {     
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 0 1 auto;
+    text-decoration: none;
+}
+
+.cuenta a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 20px;
+    padding: 7px 15px;    
+    border: 2px solid #fff;
+    border-radius: 12px;
+}
+
+.cuenta i{
+    font-size: 20px;
+    margin-right: 10px;
+}
+
+
+/*LEAVE*/
+.leave-account .fa-sign-out-alt{
+    margin: 15px;      
+    color: #fff;
+    display: inline-block;
+    font-size: 27px;
+    text-align: center;
+    flex: 0 1 auto;
+    text-decoration: none;
+}
+
+/*----------------*/
+
+/*SOPORTE AL USUARIO*/
+.soporte{
+    position: fixed;
+    top: 80%;
+    left: 30px;
+    bottom: 10%;
+    cursor: pointer;
+}

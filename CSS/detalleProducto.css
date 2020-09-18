@@ -1,0 +1,110 @@
+@import url(styleHeader.css);
+@import url(styleFooter.css);
+@import url(migaPan-Apart.css);
+
+main{
+    margin-top: 115px;;
+}
+
+main .body-dt-pd{
+    display: flex;
+    padding:30px 70px 70px 70px;
+    justify-content: center;
+}
+
+main .body-dt-pd .list-img-prod ul{
+    list-style: none;
+}
+    .list-img-prod ul li{        
+        border: 1px solid #000;
+        max-width: 70px;
+        max-height: 70px;
+        margin-bottom: 15px;
+    }
+    .list-img-prod ul li>img{
+        max-width: 70px;
+        max-height: 70px;
+    }
+.body-dt-pd .ptd-prd{
+    min-width: 400px;
+    max-width: 400px;
+    justify-content: center;
+    align-items: center;
+    height: 400px;
+    position: relative;
+    overflow: hidden;
+    max-height: 400px;
+    margin: 0 70px 0 30px;
+    
+}
+    .ptd-prd img{
+        position: absolute;
+        margin: auto;
+        top: 0;
+        right: 0;
+        left: 0;
+        bottom: 0;
+        max-width: 300px;
+        max-width: 300px;
+        transition: transform 0.7s;
+    }
+    .ptd-prd>img:hover{
+        transform: scale(2);
+    }
+.body-dt-pd .dtl-pro-look{
+    width: 500px;
+}
+.body-dt-pd .dtl-pro-look .title-pd, .descrp-pd, .valr-pd{
+    display: block;
+    flex-wrap: wrap;
+    padding: 10px 0;
+}
+    .dtl-pro-look .title-pd #title-pd-ver{
+        color: #016be4;
+        font-size: 35px;
+    }
+
+    .descrp-pd>h4{
+        color: #016be4;
+        font-size: 16px;
+    }
+    .descrp-pd #descrp-pd-ver{
+        color: #464646;
+    }
+.dtl-pro-look .valr-pd>h1{
+    color: #016be4;
+    font-size: 30px;
+}
+.dtl-pro-look .valr-pd .cant-bring-pd{
+    display: flex;
+    color: #016be4;
+    font-weight: bold;
+    font-size: 18px;
+    align-items: center;
+}
+    .valr-pd .cant-bring-pd select{
+        color: #016be4;
+        padding: 5px 10px;
+        margin-left: 15px;
+    }
+        .cant-bring-pd option{
+            font-size: 16px;
+        }
+.dtl-pro-look .btn-add{
+    text-align: center;
+    display: block;
+    align-items: center;
+    padding: 15px 0;
+}
+.dtl-pro-look .btn-add>a{
+    padding: 15px 25px;
+    background-color: #016be4;
+    border-radius: 8px;
+    font-size: 18px;
+    text-decoration: none;
+    color: #fff;
+}
+.dtl-pro-look .btn-add a>i{
+    font-size: 23px;
+    margin-right: 10px;
+}

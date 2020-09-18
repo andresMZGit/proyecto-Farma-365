@@ -1,0 +1,158 @@
+@import url(migaPan-Apart.css);
+@import url(styleFooter.css);
+@import url(styleHeader.css);
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: Bahnschrift;
+}
+
+body{
+    margin: 0;
+}
+
+main{
+    margin-top: 110px;
+}
+    .main-header .contenedor .miga-pan{
+        padding: 15px 50px;
+    }
+
+    .main-header .contenedor h1{
+        color: #fff;
+        background-color: #016be4;
+        padding: 10px 0;
+        width: 100%;
+        text-align: center;
+        font-size: 30px;
+    }
+
+main .direccion{
+    padding: 50px;
+}
+    .direccion .la-aurora{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+    .direccion .contenedor-direccion h2{
+        color: #016be4;
+        font-size: 50px;
+        width: 100%;
+        margin-bottom: 10px;
+    }
+    .contenedor-direccion hr{
+        padding: 3px 0;
+        background-color: #016be4;
+        border: none;
+        border-radius: 5px;
+    }
+    .la-aurora .datos{
+        padding: 10px 30px 10px 10px;
+        width: 50%;
+    }
+    .datos h3{
+        color: rgb(77, 77, 77);
+        font-size: 30px;
+    }
+    .datos .direccion-local p{
+        font-weight: bolder;
+        font-size: 25px;
+        color:#016be4;
+    }
+    .la-aurora .direccion-local{
+        display: flex;
+        padding: 10px 0;
+    }
+    .direccion-local p>span{
+        color: rgb(77, 77, 77);
+        font-size: 20px;
+        font-weight: normal;
+        display: block;
+        margin-top: -5px;
+    }
+    .direccion-local>i{
+        background-color: #016be4;
+        border-radius: 50%;
+        color: #fff;        
+        padding: 10px 12px;
+        font-size: 30px;
+        margin-right: 20px;
+    }
+    .direccion .map{
+        width: 50%;
+        padding: 10px;
+    }
+        .map .horarios{
+            display: flex;
+            font-size: 25px;
+            color: rgb(77, 77, 77);
+            padding: 5px 0;
+            justify-content: space-between;
+        }
+        .map h4{
+            text-align: center;
+            color: rgb(77, 77, 77);
+            font-size: 25px;
+            padding: 15px;
+        }
+        .datos form{
+            text-align: center;
+            padding: 15px 30px;
+        }
+        .datos form>input{
+            align-content: center;
+            padding: 5px 15px;
+            margin-bottom: 10px;
+            display: block;
+            width: 50%;
+            border: 1px solid #016be4;
+        }
+.direccion .contenedor-direccion iframe{
+    width: 100%;
+    height: 300px;
+    margin:0 auto;
+    text-align: center;
+    padding: 20px 0;
+}
+
+
+
+
+.contacto{
+    padding: 30px 50px;
+    background-color: #016be4;
+    color: #fff;
+    margin-bottom: 70px;
+}
+.contenedor-contacto{
+    display: flex;
+    justify-content: center;
+}
+    .contenedor-contacto .telefono{
+        display: flex;
+        font-size: 40px;
+        align-items: center;
+        margin-right: 200px;
+    }    
+    .contenedor-contacto .telefono h3{
+        font-size: 30px;
+    }
+        .telefono h5{
+            font-size: 20px;
+            margin-top: -5px;
+        }
+        .telefono i{
+            margin-right: 10px;
+        }
+    .contenedor-contacto .mail{
+        display: flex;
+        align-items: center;
+    }
+        .mail i{
+            font-size: 40px;
+            margin-right: 10px;
+        }
+        .mail h3{
+            font-size: 30px;
+        }
