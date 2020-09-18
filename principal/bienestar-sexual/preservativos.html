@@ -1,0 +1,608 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Preservativos - Farma 365</title>
+    <script src="https://kit.fontawesome.com/34cf304f66.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../../../CSS/styleMedicamentos.css">
+    <meta name="google" value="notranslate">
+</head>
+<body>
+    <!--ventana emergente de login-->
+    <div id="overlay-login" class="overlay-login">
+        <div id="container-login" class="container-login">
+            <a id="close-over" class="close-overlay"><i class="fas fa-times"></i></a>
+            <!--boton cerrar login-->
+            <h3>Iniciar Sesión</h3>
+            <form action="../../home.html">
+                <div class="container-inputs">
+                    <label for="mail">Correo Electrónico:</label>
+                    <input type="email" name="mail" required>
+                    <label for="pass">Contraseña:</label>
+                    <input type="password" name="pass" minlength="8" required>
+                </div>
+                <a id="btn-contraseña" class="btn-contraseña"><u>Olvide mi Contraseña </u></a>
+                <input type="submit" class="entrar" value="Entrar a FARMA365">
+                <a href="#" class="otros"><i class="fab fa-facebook-f"></i>Facebook</a>
+                <a href="#" class="otros"><i class="fab fa-google"></i>Google</a>
+                <a id="btn-register" class="btn-register"><span style="color: #656565;">¿No tienes Cuenta?</span>
+                    Regístrate</a>
+            </form>
+        </div>
+    </div>
+    <!--ventana emergente de recuperar contraseña-->
+    <div id="over-contra" class="over-contra">
+        <div id="container-contra" class="container-contra">
+            <div class="encabezado">
+                <a id="go-login" class="go-login"><i class="fas fa-angle-left"></i></a>
+                <h4>Olvide mi Contraseña</h4>
+                <a id="close-contra" class="close-contra"><i class="fas fa-times"></i></a>
+            </div>
+            <form action="">
+                <div class="input-contra">
+                    <img src="../../../photos/imag/contraseña.png" alt="icon-mail-flip" class="mail-contra" width="80px"
+                        height="80px">
+                    <p>Ingrese su correo electrónico de su cuenta FARMA 365, para restablecer su contraseña.</p>
+                    <input type="email" class="ingreso" placeholder="Correo Electrónico" required>
+                    <input type="submit" id="btn-recuperar" class="btn-recuperar" value="Recuperar">
+                </div>
+            </form>
+        </div>
+    </div>
+    <!--ventana de confirmacion de recuperar contraseña-->
+    <div id="over-c2" class="over-c2">
+        <div id="container-c2" class="container-c2">
+            <div class="banner-c2">
+                <a id="btn-atras" class="btn-atras"><i class="fas fa-angle-left"></i></a>
+                <h4>Olvide mi Contraseña</h4>
+                <a id="btn-cancelar" class="btn-cancelar"><i class="fas fa-times"></i></a>
+            </div>
+            <div class="inf-c2">
+                <img src="../../../photos/imag/mail-send.png" alt="icono-mail-flip" class="mail-send" width="138px" height="82px">
+                <h3>Hemos enviado un email a:</h3>
+                <p>Revisa tu correo para poder cambiar tu contraseña.</p>
+                <input type="submit" id="send" class="send" value="Volver a Enviar">
+            </div>
+        </div>
+    </div>
+    <!--ventana emergente de register-->
+    <div id="overlay-reg" class="overlay-reg">
+        <div id="container-reg" class="container-reg">
+            <a id="close-reg" class="close-reg"><i class="fas fa-times"></i></a>
+            <h3>Regístrate</h3>
+            <form action="../registrado/inicio/home.html">
+                <div class="inputs-reg">
+                    <div class="colum1">
+                        <label for="names">Nombre:</label>
+                        <input type="text" name="names" required>
+                        <label for="mail-reg">Correo Electrónico:</label>
+                        <input type="email" name="mail-reg" required>
+                        <label for="cell">Teléfono:</label>
+                        <input type="tel" name="cell" maxlength="10" minlength="9" required>
+                        <label for="date-user">Fecha de Nacimiento: </label>
+                        <input type="date" name="date-user" min="31-12-2001" required>
+                        <div class="terminos">
+                            <ul>
+                                <li>
+                                    <input type="checkbox" name="a1">
+                                    <label for="a1"><u>Recibir ofertas de nosotros</u></label>
+                                </li>
+                                <li>
+                                    <input type="checkbox" name="termi-check">
+                                    <label for="termi-check"><u>Acepto los Terminos y Condiciones de
+                                            Farma365</u></label>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="colum2">
+                        <label for="lasts">Apellidos:</label>
+                        <input type="text" class="lasts" name="lasts" required>
+                        <label for="password">Contraseña:</label>
+                        <input type="password" name="password" minlength="8" required>
+                        <label for="c-password">Confirmar Contraseña:</label>
+                        <input type="password" name="c-password" required>
+                        <input type="submit" class="btn-register" value="Registrarme a FARMA365">
+                    </div>
+                </div>
+                <h4>Prefiero Registrarme con:</h4>
+                <div class="otros-reg">
+                    <div class="opcion1">
+                        <a href="#" class="face-reg"><i class="fab fa-facebook-f"></i>Facebook</a>
+                    </div>
+                    <div class="opcion2">
+                        <a href="#" class="google-reg"><i class="fab fa-google"></i>Google</a>
+                    </div>
+                </div>
+                <a id="btn-login" class="btn-login"><span style="color: #656565;">¿Ya tienes una cuenta?</span> Inicia
+                    Sesión</a>
+            </form>
+        </div>
+    </div>
+
+    <div class="soporte">      
+        <img id="entrar-soporte" class="entrar-soporte" src="../../../photos/imag/medico.png" alt="soporte-al-usuario.png" width="100px" height="100px">  
+        <div id="contenedor-servicio" class="contenedor-servicio">           
+            <div class="box-service">
+                <div class="box-sv-header">
+                    <h2>Servicio al Usuario</h2>
+                    <i id="cerrarSoporte" class="fas fa-times"></i>
+                </div>
+                <div class="asesor-tecnico">
+                    <div>
+                        <h4>¿Que deseas hacer?</h4>
+                        <p>Realizar Reclamo:</p>
+                    </div>
+                    <form action="">
+                        <input type="text" placeholder="Nombre y Apellido*" name="nombre-service" id="nombre-service" required>
+                        <input type="email" placeholder="Correo Electrónico*" name="correo-service" id="correo-service" required>
+                        <label for="opcion-tecnica">¿Que inconveniente tuviste?</label>
+                        <select name="opcion-tecnica" id="ocpiones-select" required>
+                            <option value="condicion1">No recibi mi pedido despues de las 5 horas del pago</option>
+                            <option value="condicion2">Reportar problemas técnicos de la página</option>
+                            <option value="condicion3">No me agregan productos a la Bolsa</option>
+                            <option value="condicion4">El sistema no agarra mi tarjeta de débito o credito</option>
+                            <option value="condicon5">Otro...</option>
+                        </select>
+                        <input type="text" class="mensaje-sv" placeholder="Describe tu inconveniente*" name="mensaje-service" id="mensaje-service" required>
+                    </form>
+                </div>
+                <div class="cita-mdc">
+                    <button id="enviarSoporte">Enviar Reporte</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <header>
+        <div class="contenedor">
+            <div class="contenedor-princ">
+                <div class="logo">
+                    <a href="../../home.html"><img src="../../../photos/logo-farma365-min.png" alt="Logo Farma 365" ></a>
+                </div>
+                <!------------BUSCADOR------------>   
+                <div class="contenedor-search">
+                    <input type="search" id="input-buscador" placeholder="¿Que medicamento o producto estas buscando?">
+                    
+                    <!--contenedor para el buscador-->
+                    <div class="contenedor-table" id="contenedor-lista">
+                        <table class="table-search">
+                            <tbody>
+                                <tr>
+                                    <td style="width: 300px;"><p>Benzogarden</p></td>
+                                    <td style="width: 100px;"><p>$   <span>14.40</span></p></td>
+                                    <td><img src="../../list-products/z-IMAGES/medicamentos/antiflamatorios/92678.png" width="40px"></td>
+                                </tr>
+                                <tr>
+                                    <td style="width: 300px;"><p>Gelcavit Q-10 - Vitaminas</p></td>
+                                    <td style="width: 100px;"><p>$   <span>18.00</span></p></td>
+                                    <td><img src="../../list-products/z-IMAGES/nutricion-vitaminas/95747.jpg" width="40px"></td>
+                                </tr>                                
+                                <tr>
+                                    <td style="width: 300px;"><p>Fakulti Kids Vainilla Pote 400 gr</p></td>
+                                    <td style="width: 100px;"><p>$   <span>15.86</span></p></td>
+                                    <td><img src="../../list-products/z-IMAGES/maternidad/97331.jpg" width="40px"></td>
+                                </tr>
+                                <tr>
+                                    <td style="width: 300px;"><p>Suncare Compacto 50 x10g</p></td>
+                                    <td style="width: 100px;"><p>$   <span>14.36</span></p></td>
+                                    <td><img src="../../list-products/z-IMAGES/dermocosmetica/99410.png" width="40px"></td>
+                                </tr>
+                                <tr>
+                                    <td style="width: 300px;"><p>Nutricalcin Proteinas DoyPack 900gr Fresa</p></td>
+                                    <td style="width: 100px;"><p>$   <span>19.10</span></p></td>
+                                    <td><img src="../../list-products/z-IMAGES/deportiva/100604.jpg" width="40px"></td>
+                                </tr>
+                                
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <!--DIRECCION-->
+                <div class="direccion"><a class="boton">La Aurora, Manta</a></div>
+                <!--LOGIN-->
+                <div class="login">
+                    <a id="inicio-s" class="inicios" href="#">Iniciar Sesion</a>
+                    <a id="registro" class="register" href="#">Registrarse</a>
+                </div>
+            </div>
+            <!---------------SUBSISTEMAS--------------->
+            <nav class="menu" id="menu">
+
+                <div class="contenedor contenedor-enlaces-nav">
+                    <div class="menu-prod" id="menu-prod">
+                        <p><i class="fas fa-bars"></i>Menú de Productos</p>
+                    </div>
+
+                    <div class="enlaces">
+                        <a href="../../catalogo.html">Catálogo</a>
+                        <div class="div-q-som" id="click-farma">
+                            <a href="#">Farmacias FARMA 365</a>
+                            <div class="data-far" id="data-far">
+                                <a id="txt-data" href="../../qSomos.html">Quiénes Somos</a>
+                            </div>
+                        </div>
+                        <a href="../../contactos.html">Contáctanos</a>
+                        <a href="../../facturacion.html">Factura Electrónica</a>
+                        <!--bolsa de valores-->
+                        <div class="container-solo-bolsa">
+                            <div class="row">                                
+                                    <a id="look-bolsa2" class="look-bolsa2" href="#"><i class="fas fa-shopping-bag"></i>$<span id="total-bolsaNeto">0.00</span> </a>                            
+                                    <div class="boton-bolsa">
+                                            <div id="container-bolsa2" class="container-bolsa">
+                                                <div class="bolsa-header">
+                                                    <h1>Bolsa de Compras</h1>
+                                                    <a id="cerrar-bolsa" class="cerrar-bolsa" href="#"><i class="fas fa-times"></i></a>
+                                                </div>
+                                                <div id="solo-table" class="table">
+                                                    <div class="look-table" id="capturador">
+                                                        <table id="productos-agregados" class="table-bolsa">
+                                                            <thead>
+                                                                <tr>
+                                                                    <th style="max-width: 100PX;">Imagen</th>
+                                                                    <th style="width: 200px; max-width: 200px;">Nombre</th>
+                                                                    <th style="width: 85px; max-width: 85px;">Precio</th>
+                                                                </tr>
+                                                            </thead>
+                                                            <tbody>
+                                                            </tbody>                                
+                                                        </table>
+                                                    </div>
+                                                    
+                                                    <div class="enlaces-bolsa">
+                                                        <div class="totales">
+                                                            <h2>Total a Pagar:</h2>
+                                                            <h2 id="total-bolsa"></h2>
+                                                        </div>
+                                                        <a id="vaciar-bolsa" href="#">Vaciar Bolsa</a>
+                                                        <a id="pagar-productos" href="#">Pagar ahora</a>
+                                                    </div>
+                                                </div>
+                                            </div>                            
+                                    </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="contenedor contenedor-grid">
+                    <div class="grid" id="grid">
+                        <div class="categorias" id="categorias-menu">                            
+                            <a href="#"data-categoria="medicamentos"><span><i 
+                                class="fas fa-medkit"></i>Medicamentos</span><i class="fas fa-angle-right"></i></a>
+                            <a href="#" data-categoria="dermocosmetica"><span><i
+                                        class="fas fa-sink"></i>Dermocosmética</span><i
+                                    class="fas fa-angle-right"></i></a>
+                            <a href="#" data-categoria="nutricion-y-vitaminas"><span><i
+                                        class="fas fa-utensils"></i>Nutrición y Vitaminas</span><i
+                                    class="fas fa-angle-right"></i></a>
+                            <a href="#" data-categoria="infantil-y-maternidad"><span><i
+                                        class="fas fa-baby-carriage"></i>Infantil y Maternidad</span><i
+                                    class="fas fa-angle-right"></i></a>
+                            <a href="#" data-categoria="bienestar-sexual"><span><i
+                                        class="fas fa-venus-mars"></i>Bienestar Sexual</span><i
+                                    class="fas fa-angle-right"></i></a>
+                            <a href="#" data-categoria="nutricion-deportiva"><span><i
+                                        class="fas fa-dumbbell"></i>Nutrición Deportiva</span><i
+                                    class="fas fa-angle-right"></i></a>
+                            <a href="#" data-categoria="cuidado-personal"><span><i
+                                        class="fas fa-user-shield"></i>Cuidado Personal</span><i
+                                    class="fas fa-angle-right"></i></a>
+                        </div>
+                        <div class="cont-subcategorias">
+                            <div class="subcategoria" data-categoria="medicamentos">
+                                <div class="enlaces-subcategoria">
+                                    <a href="../../list-products/medicamentos/page1-medi.html"><h3 class="subtitulo">Medicamentos</h3></a>
+                                    <hr>
+                                    <div class="colum-subcategoria">
+                                        <a href="../../list-products/medicamentos/subcategorias/accesorios-medicos.html">Accesorios Médicos</a>
+                                        <a href="../../list-products/medicamentos/subcategorias/alergias.html">Alergías</a>
+                                        <a href="../../list-products/medicamentos/subcategorias/dolor-y-fiebre.html">Dolor y Fiebre</a>
+                                        <a href="../../list-products/medicamentos/subcategorias/antiflamatorios.html">Antiflamatorios</a>
+                                        <a href="../../list-products/medicamentos/subcategorias/antigripales.html">Antigripales</a>
+                                        <a href="../../list-products/dermocosmetica/dermocosmeticaAll.html">Dermatólogia</a>
+                                        <a href="../../list-products/maternidad/maternidadAll.html">Infantil</a>
+                                        <a href="../../list-products/bienestar-sexual/preservativos.html">Preservativos</a>
+                                        <a href="../../list-products/dermocosmetica/proSolar.html">Protección Solar</a>
+                                        <a href="../../list-products/medicamentos/subcategorias/respiratorio.html">Respiratorio</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="subcategoria" data-categoria="dermocosmetica">
+                                <div class="enlaces-subcategoria">
+                                    <a href="../../list-products/dermocosmetica/dermocosmeticaAll.html"><h3 class="subtitulo">Dermocosmética</h3></a>
+                                    <hr>
+                                    <div class="colum-subcategoria">
+                                        <a href="../../list-products/dermocosmetica/corporal.html">Corporal</a>
+                                        <a href="../../list-products/dermocosmetica/maquillaje.html">Maquillaje</a>
+                                        <a href="../../list-products/dermocosmetica/proSolar.html">Protección Solar</a>
+                                        <a href="../../list-products/dermocosmetica/rostro.html">Rostro</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="subcategoria" data-categoria="nutricion-y-vitaminas">
+                                <div class="enlaces-subcategoria">
+                                    <a href="../../list-products/nutricion/nutricion-alimentacion.html"><h3 class="subtitulo">Nutrición y Vitaminas</h3></a>
+                                    <hr>
+                                    <div class="colum-subcategoria">
+                                        <a href="../../list-products/nutricion/multivitaminicos.html">Multivitamínicos</a>
+                                        <a href="../../list-products/nutricion/vitaminas.html">Vitaminas</a>
+                                        <a href="../../list-products/nutricion/suplementos-vitaminicos.html">Suplementos Vitaminicos</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="subcategoria" data-categoria="infantil-y-maternidad">
+                                <div class="enlaces-subcategoria">
+                                    <a href="../../list-products/maternidad/maternidadAll.html"><h3 class="subtitulo">Infantil y Maternidad</h3></a>
+                                    <hr>
+                                    <div class="colum-subcategoria">
+                                        <a href="../../list-products/maternidad/almInfantil.html">Alimentación Infantil</a>
+                                        <a href="../../list-products/maternidad/hgInfantil.html">Higiene Infantil</a>
+                                        <a href="../../list-products/maternidad/lactancia.html">Maternidad y Lactancia</a>
+                                        <a href="../../list-products/maternidad/pañales.html">Pañales</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="subcategoria" data-categoria="bienestar-sexual">
+                                <div class="enlaces-subcategoria">
+                                    <a href="../../list-products/bienestar-sexual/bienestarSexualAll.html"><h3 class="subtitulo">Bienestar Sexual</h3></a>
+                                    <hr>
+                                    <div class="colum-subcategoria">
+                                        <a href="../../list-products/bienestar-sexual/estimulantes.html">Estimulantes</a>
+                                        <a href="../../list-products/bienestar-sexual/lubricantes.html">Lubricantes</a>
+                                        <a href="../../list-products/bienestar-sexual/preservativos.html">Preservativos</a>
+                                        <a href="../../list-products/bienestar-sexual/pruebas.html">Pruebas de Embarazo</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="subcategoria" data-categoria="nutricion-deportiva">
+                                <div class="enlaces-subcategoria">
+                                    <a href="../../list-products/deportiva/deportivaAll.html"><h3 class="subtitulo">Nutrición Deportiva</h3></a>
+                                    <hr>
+                                    <div class="colum-subcategoria">
+                                        <a href="../../list-products/deportiva/accDeporte.html">Accesorios de Deporte</a>
+                                        <a href="../../list-products/deportiva/bEnergizante.html">Barras Energeticas</a>
+                                        <a href="../../list-products/deportiva/energizante.html">Energízantes</a>
+                                        <a href="../../list-products/deportiva/proteina.html">Proteínas</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="subcategoria" data-categoria="cuidado-personal">
+                                <div class="enlaces-subcategoria">
+                                    <a href="../../list-products/cuidado-pers/cPersonalAll.html"><h3 class="subtitulo">Cuidado Personal</h3></a>
+                                    <hr>
+                                    <div class="colum-subcategoria">
+                                        <a href="../../list-products/cuidado-pers/afeitado.html">Afeitado</a>
+                                        <a href="../../list-products/cuidado-pers/cuidadoBucal.html">Cuidado Bucal</a>
+                                        <a href="../../list-products/cuidado-pers/cuidadoPies.html">Cuidado de los Pies</a>
+                                        <a href="../../list-products/cuidado-pers/desodorante.html">Desodorantes</a>
+                                        <a href="../../list-products/cuidado-pers/repelente.html">Repelentes</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main class="body-header">
+        <section class="header-main">
+            <div class="container-header">
+                <div class="miga-pan">
+                    <a href="../../home.html">Inicio <span><i class="fas fa-angle-right"></i></span></a>
+                    <a href="bienestarSexualAll.html">Bienestar Sexual <span><i class="fas fa-angle-right"></i></span></a>
+                    <a id="miga-pan-end">Preservativos</a>
+                </div>
+                <div class="subtitulo">
+                    <h2 style="text-transform: uppercase; font-size: 35px;">Bienestar Sexual</h2>
+                    <div class="cont-paginas">
+                        <h3>Preservativos</h3>     
+                    </div>
+                                   
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <main class="body-main">
+        <section class="navegacion">
+            <nav>
+                <div class="contenedor-elementos">
+                    <div class="contenedor">
+                        <ul>
+                            <li>Sugerencias:</li>                          
+                            <li><a href="estimulantes.html">Estimulantes</a></li>                            
+                            <li><a href="lubricantes.html">Lubricantes</a></li>                            
+                            <li><a href="pruebas.html">Pruebas de Embarazo</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </section>
+        <section class="todos-productos">
+            <article id="normal-prod-medicamentos" class="active">
+                <div class="container-main">
+                    <div class="container-catalogo" id="lista-productos">
+                        
+                        <div class="fila-productos">   
+                            
+                            <div class="box-producto">
+                                <div class="images-product">
+                                    <img src="../z-IMAGES/bienestarSexual/100504.webp" alt="producto1">
+                                </div>
+                                <div class="body-bolsa">
+                                    <hr>
+                                    <div class="descr-product"><a class="text-descr" id="text-desc" data-id="100504">preventor hot hot</a></div>
+                                    <h3 class="precio">$ <span>3.28</span></h3>
+                                    <a href="" class="producto-catalogo btn-comprar"><i class="fas fa-shopping-bag"></i>Agregar a la Bolsa</a>
+                                </div>
+                            </div>
+
+                            <div class="box-producto">
+                                <div class="images-product">
+                                    <img src="../z-IMAGES/bienestarSexual/100503.webp" alt="producto1">
+                                </div>
+                                <div class="body-bolsa">
+                                    <hr>
+                                    <div class="descr-product"><a class="text-descr" id="text-desc" data-id="100503">hot pack 10 preservativos con lubricacion termica</a></div>
+                                    <h3 class="precio">$ <span>4.72</span></h3>
+                                    <a href="" class="producto-catalogo btn-comprar"><i class="fas fa-shopping-bag"></i>Agregar a la Bolsa</a>
+                                </div>
+                            </div>
+
+                            <div class="box-producto">
+                                <div class="images-product">
+                                    <img src="../z-IMAGES/bienestarSexual/100501.webp" alt="preservativos sanamed duo tornado">
+                                </div>
+                                <div class="body-bolsa">
+                                    <hr>
+                                    <div class="descr-product"><a class="text-descr" id="text-desc" data-id="100501">preservativos sanamed duo tornado</a></div>
+                                    <h3 class="precio">$ <span>4.12</span></h3>
+                                    <a href="" class="producto-catalogo btn-comprar"><i class="fas fa-shopping-bag"></i>Agregar a la Bolsa</a>
+                                </div>
+                            </div>
+
+                            <div class="box-producto">
+                                <div class="images-product">
+                                    <img src="../z-IMAGES/bienestarSexual/100506.png" alt="preservativos five hot 5 lubricación termica metal">
+                                </div>
+                                <div class="body-bolsa">
+                                    <hr>
+                                    <div class="descr-product"><a class="text-descr" id="text-desc" data-id="100506">preservativos five hot 5 lubricación termica metal</a></div>
+                                    <h3 class="precio">$ <span>4.31</span></h3>
+                                    <a href="" class="producto-catalogo btn-comprar"><i class="fas fa-shopping-bag"></i>Agregar a la Bolsa</a>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="fila-productos">   
+
+                            <div class="box-producto">
+                                <div class="images-product">
+                                    <img src="../z-IMAGES/bienestarSexual/100508.jpg" alt="preservativos duo normal x6 cajas">
+                                </div>
+                                <div class="body-bolsa">
+                                    <hr>
+                                    <div class="descr-product"><a class="text-descr" id="text-desc" data-id="100508">preservativos duo normal x6 cajas</a></div>
+                                    <h3 class="precio">$ <span>15.66</span></h3>
+                                    <a href="" class="producto-catalogo btn-comprar"><i class="fas fa-shopping-bag"></i>Agregar a la Bolsa</a>
+                                </div>
+                            </div>
+                        
+                            
+                            <div class="box-producto">
+                                <div class="images-product">
+                                    <img src="../z-IMAGES/bienestarSexual/100509.jpg" alt="preservativos duo ultrasensible x 6 cajas">
+                                </div>
+                                <div class="body-bolsa">
+                                    <hr>
+                                    <div class="descr-product"><a class="text-descr" id="text-desc" data-id="100509">preservativos duo ultrasensible x 6 cajas</a></div>
+                                    <h3 class="precio">$ <span>17.94</span></h3>
+                                    <a href="" class="producto-catalogo btn-comprar"><i class="fas fa-shopping-bag"></i>Agregar a la Bolsa</a>
+                                </div>
+                            </div>
+
+                            <div class="box-producto">
+                                <div class="images-product">
+                                    <img src="../z-IMAGES/bienestarSexual/100512.jpg" alt="preservativo control retard">
+                                </div>
+                                <div class="body-bolsa">
+                                    <hr>
+                                    <div class="descr-product"><a class="text-descr" id="text-desc" data-id="100512">preservativo control retard</a></div>
+                                    <h3 class="precio">$ <span>6.53</span></h3>
+                                    <a href="" class="producto-catalogo btn-comprar"><i class="fas fa-shopping-bag"></i>Agregar a la Bolsa</a>
+                                </div>
+                            </div>
+
+                            <div class="box-producto">
+                                <div class="images-product">
+                                    <img src="../z-IMAGES/bienestarSexual/100515.jpg" alt="preservativos duo kit fiesta x6 caja">
+                                </div>
+                                <div class="body-bolsa">
+                                    <hr>
+                                    <div class="descr-product"><a class="text-descr" id="text-desc" data-id="100515">preservativos duo kit fiesta x6 caja</a></div>
+                                    <h3 class="precio">$ <span>17.94</span></h3>
+                                    <a href="" class="producto-catalogo btn-comprar"><i class="fas fa-shopping-bag"></i>Agregar a la Bolsa</a>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                
+            </article>
+            
+        </section>
+    </main>
+
+    <footer>
+        <div class="contenedor-footer">
+            <div class="marca-volver">
+                <a href="../../home.html"><img src="../../../photos/logo-farma365-min.png" alt="logo farma365 volver"></a>
+            </div>
+            <div class="contenedor-columna">
+                
+                <div class="columna">
+                    <h3 class="title">Acerca de Nosotros</h3>
+                    <hr>
+                    <ul>                       
+                        <li><a class="lista" href="../../qSomos.html">Quiénes Somos</a></li>
+                        <li><a class="lista" href="../../catalogo.html">Catálogo</a></li>
+                        <li><a class="lista" href="../../facturacion.html">Factura Electrónica</a></li>
+                    </ul>
+                </div>
+                <div class="columna">
+                    <h3 class="title">Horarios de Atención</h3>
+                    <hr>
+                    <p>Lunes a viernes:
+                        <p>08:00 am - 21:00 pm</p>
+                        <p>Sabados y Domingos - Feriados:
+                        <p>08:30 am - 21:30 pm</p>
+                        </p>
+                    </p>
+                </div>
+                <div class="columna">
+                    
+                    <a class="title enlace-tt" href="../../contactos.html">Contáctanos</a>
+                    <hr>
+                    <p>Manta: 0984562658</p>
+                    <p>E-mail: farmacias365@gmail.com</p>
+                </div>
+                <div class="columna">
+                    <h3 class="title">Ayúdanos a Mejorar</h3>
+                    <hr>                    
+                    <ul>                       
+                        <li><input class="name" type="text" placeholder="Nombre"></li>
+                        <li><input class="mail" type="text" placeholder="Correo Electronico"></li>
+                        <li><input class="message" type="text" placeholder="Mensaje"></li>
+                        <li><a class="send" href="#">Enviar</a></li>
+                    </ul>
+                </div> 
+                              
+            </div>  
+            <div class="contenedor-credits">
+                <h4 class="credits">Farma 365 2020 - Todos los Derechos Reservados&reg;</h4>
+                <h4 class="credits">Designed by Andrés MZ</h4>
+                
+            </div>           
+        </div>
+    </footer>
+
+    <script src="../../../JS/login.js"></script>
+    <script src="../../../JS/register.js"></script>
+    <script src="../../../JS/menu.js"></script>
+    <script src="../../../JS/filtros.js"></script>
+
+    <script src="../../../JS/verBolsa.js"></script>
+    <script src="../../../JS/prodPaginas.js"></script>
+    <script src="../../../JS/bolsa.js"></script>
+    <script src="../../../JS/pedido.js"></script>
+
+    <script src="../../../JS/soporte.js"></script>
+    <script src="../../../JS/detalleProducto.js"></script>
+</body>
+</html>
